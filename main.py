@@ -30,7 +30,7 @@ with open('csvs/dados_pior_caso.csv',mode='w',encoding='utf-8',newline='') as no
 with open('csvs/dados_melhor_caso.csv',mode='w',encoding='utf-8',newline='') as nome_arquivo:
     file_csv = csv.writer(nome_arquivo,delimiter=',')
     file_csv.writerow(['Fila',"n","C(n)"])
-    for i in range(0,10000):
+    for i in range(1,10000):
         fila = FilaListaContigua[Item](i)
         dic = Dicionario(i,fila)
         indice, acessos = dic.pesquisar(0)

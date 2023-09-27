@@ -45,7 +45,7 @@ class ListaEncadeadaV3(ListaEncadeadaV2,Generic[T]):
     def removerInicio(self, indice: int = 0) -> T:
         self.contarAcesso()
         atual = self._primeiroItem.proximo
-        self.contarAcesso(2)
+        self.contarAcesso(3)
         self._primeiroItem.setProximo(atual.proximo)
         if self.quantidadeElementos == 1:
             self.contarAcesso()
